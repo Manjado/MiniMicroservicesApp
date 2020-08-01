@@ -1,4 +1,6 @@
 FROM node:alpine
+# fix cra for docker
+ENV CI=true
 
 WORKDIR /app
 COPY package.json ./
